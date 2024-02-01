@@ -14,3 +14,6 @@ public:
         nums = temp;
     }
 };
+
+//we created temp to avoid overwrite
+// temp[(i + k) % nums.size()] = nums[i]
