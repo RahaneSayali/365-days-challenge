@@ -10,9 +10,11 @@ private:
             ans.push_back(output);
             return;
         }
-        int number = digit[index] - '0'; // to convert string into number '2' to 2 we have to minus 0
-        string value = mapping[number];
+        int number = digit[index] - '0'; // to convert string no. into number '2' to 2 we have to minus 0
+        string value = mapping[number];  //aur uski string value nikalo from mapping table 
 
+
+        //recursive call according to current character of input string 
         for (int i = 0; i < value.length(); i++)
         {
             output.push_back(value[i]);
