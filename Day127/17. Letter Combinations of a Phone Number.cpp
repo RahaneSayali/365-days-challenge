@@ -17,7 +17,7 @@ private:
         {
             output.push_back(value[i]);
             solve(digit, output, index + 1, ans, mapping);
-            output.pop_back();
+            output.pop_back();//pop to again make output empty for next loop
         }
     }
 
